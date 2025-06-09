@@ -1,6 +1,5 @@
 const projects = [
     "projects/MARCH_on_a_new_datum.html",
-    "projects/MARCH_on_a_new_datum copy.html",
     // Add more project filenames here...
   ];
   
