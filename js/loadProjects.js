@@ -1,5 +1,5 @@
 const projects = [
-    "projects/MARCH_on_a_new_datum.html",
+    "https://j299liu.github.io/JinLiu-Portfolio/projects/MARCH_on_a_new_datum.html",
     // Add more project filenames here...
   ];
   
