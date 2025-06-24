@@ -5,13 +5,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- GitHub Pages base path -->
     <base href="https://j299liu.github.io/JinLiu-Portfolio/projects/">
+    
+    <!-- Script to remove base when running locally -->
+    <script>
+        if (window.location.hostname !== "j299liu.github.io") {
+            const base = document.querySelector("base");
+            if (base) base.remove();
+        }
+    </script>
 
     <meta name="project-image" content="img/MArch/on_a_new_datum/IMG_1142.jpg">
     <meta name="project-title" content="On A New Datum">
     <meta name="project-year" content="2022">
-    <meta name="project-category" content="design building">
-    <meta name="project-label" content="Design / Building">
+    <meta name="project-category" content="design">
+    <meta name="project-label" content="Design">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jin Liu :: Portfolio</title>

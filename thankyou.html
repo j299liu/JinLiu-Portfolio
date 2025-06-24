@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Thank You</title>
+
+  <!-- GitHub Pages base path -->
+  <base href="https://j299liu.github.io/JinLiu-Portfolio/">
+  
+  <!-- Script to remove base when running locally -->
+  <script>
+    if (window.location.hostname !== "j299liu.github.io") {
+      const base = document.querySelector("base");
+      if (base) base.remove();
+    }
+  </script>
+
+
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
@@ -35,6 +48,6 @@
 <body>
     <h1>Thank You!</h1>
     <p>Your message has been successfully sent.</p>
-    <a href="/index.html">Back to Home</a>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>

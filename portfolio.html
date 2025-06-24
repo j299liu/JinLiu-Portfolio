@@ -8,7 +8,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jin Liu :: Portfolio</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+    <!-- GitHub Pages base path -->
     <base href="https://j299liu.github.io/JinLiu-Portfolio/">
+    
+    <!-- Script to remove base when running locally -->
+    <script>
+        if (window.location.hostname !== "j299liu.github.io") {
+        const base = document.querySelector("base");
+        if (base) base.remove();
+        }
+    </script>     
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -71,13 +81,11 @@
                     <nav class="categories text-center">
                         <ul class="portfolio_filter">
                             <li><a href="" class="active" data-filter="*">All</a></li>
+                            <li><a href="" data-filter=".da">Data Analysis</a></li>
+                            <li><a href="" data-filter=".ai">AI</a></li>
+                            <li><a href="" data-filter=".ml">Machine Learning Models</a></li>
                             <li><a href="" data-filter=".design">Design</a></li>
-                            <li><a href="" data-filter=".make">Make</a></li>
-                            <li><a href="" data-filter=".analysis">Data Analysis</a></li>
-                            <li><a href="" data-filter=".drawing">Drawing</a></li>
-                            <li><a href="" data-filter=".urban">Urban Planning</a></li>
-                            <li><a href="" data-filter=".building">Building</a></li>
-                            <li><a href="" data-filter=".object">Object</a></li>
+                            <!-- <li><a href="" data-filter=".make">Make</a></li> -->
                         </ul>
                     </nav>
                 </div>

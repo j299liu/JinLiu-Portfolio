@@ -50,4 +50,11 @@ const projects = [
   });
 
   await Promise.all(promises);
+  
+  // Now trigger Isotope or your filtering script
+  if (typeof $ !== 'undefined' && typeof $.fn.isotope === 'function') {
+    $('#project-container')
+      .isotope('reloadItems')
+      .isotope({ sortBy: 'original-order' });
+  }
   }

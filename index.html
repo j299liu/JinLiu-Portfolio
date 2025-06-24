@@ -8,9 +8,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jin Liu :: Portfolio</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
-    <base href="https://j299liu.github.io/JinLiu-Portfolio/">
 
-    <!-- CSS -->
+    <!-- GitHub Pages base path -->
+    <base href="https://j299liu.github.io/JinLiu-Portfolio/">
+    
+    <!-- Script to remove base when running locally -->
+    <script>
+        if (window.location.hostname !== "j299liu.github.io") {
+            const base = document.querySelector("base");
+            if (base) base.remove();
+        }
+    </script> 
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +72,8 @@
                         <b>&nbsp;Built Environment.</b>
                     </span>
                 </h1>
-                <h5>With climate change upon us, how can we live more sustainable?</h5>
+                <h5>Power Human with Data and AI</h5>
+                <!-- <h5>With climate change upon us, how can we live more sustainable?</h5> -->
             </div>
 
             <div class="mouse">
