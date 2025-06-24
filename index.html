@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Load global version -->
+    <script src="config.js"></script>
+
     <title>Jin Liu :: Portfolio</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 
@@ -28,6 +32,7 @@
 
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -72,7 +77,7 @@
                         <b>&nbsp;Built Environment.</b>
                     </span>
                 </h1>
-                <h5>Power Human with Data and AI</h5>
+                <h5>Power Human with Data & AI</h5>
                 <!-- <h5>With climate change upon us, how can we live more sustainable?</h5> -->
             </div>
 
@@ -121,14 +126,14 @@
     </script>
 
     <script>
-        fetch("m_navigator.html")
+        fetch("m_navigator.html?v=${VERSION}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("navigator-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading navigation:", error));
 
-        fetch("m_footer.html")
+        fetch("m_footer.html?v=${VERSION}")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer-container").innerHTML = data;
