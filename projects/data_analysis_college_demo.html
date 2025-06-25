@@ -17,11 +17,11 @@
         }
     </script>
 
-    <meta name="project-image" content="img/MArch/on_a_new_datum/IMG_1142.jpg">
-    <meta name="project-title" content="On A New Datum">
-    <meta name="project-year" content="2022">
-    <meta name="project-category" content="design"> <!-- da, ai, ml, design -->
-    <meta name="project-label" content="Design"> <!-- Data Analysis, AI, Machine Learning Models, Design -->
+    <meta name="project-image" content="img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_03.jpg?v=${VERSION}">
+    <meta name="project-title" content="Sales Analysis">
+    <meta name="project-year" content="2024">
+    <meta name="project-category" content="da"> <!-- da, ai, ml, design -->
+    <meta name="project-label" content="Data Analysis"> <!-- Data Analysis, AI, Machine Learning Models, Design -->
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jin Liu :: Portfolio</title>
@@ -76,9 +76,9 @@
     </div>
     
     <!-- top-bar -->
-    <section class="hero-section" style="background-image: url('../img/MArch/on_a_new_datum/IMG_1142.jpg');">
+    <section class="hero-section" style="background-image: url('../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_03.jpg?v=${VERSION}');">
         <div class="hero-overlay">
-            <h1 class="hero-title">On A New Datum</h1>
+            <h1 class="hero-title">Sales Analysis</h1>
             <p class="hero-breadcrumb">
                 <a href="../index.html?v=${VERSION}">Home</a> / <a href="../portfolio.html?v=${VERSION}">Portfolio</a> / Current
             </p>
@@ -91,22 +91,22 @@
 
         <div class="project-info">
             <div class="project-details">
-                <h4 class="text-uppercase">Design Information</h4>
+                <h4 class="text-uppercase">Project Information</h4>
                 <div class="h-30"></div>
-                <p><strong>Team</strong> 2 People</p>
-                <p><strong>Location</strong> University of Toronto, Canada</p>
-                <p><strong>Project</strong> M.Arch - Comprehensive Studio</p>
-                <p><strong>Status</strong> Concept Design</p>
-                <p><strong>RIBA Stage</strong> 2, 3, 4</p>
+                <p><strong>Client</strong> AI/ML Bootcamp at Gateshead College</p>
+                <p><strong>Data Source</strong> Simulated customer data</p>
+                <p><strong>Data Size</strong> 6 columns, 105 rows</p>
+                <p><strong>Objective</strong> Clean data, generate a report</p>
+                <p><strong>Status</strong> Done</p>
             </div>
         
             <div class="project-details">
-                <h4 class="text-uppercase">Project Information</h4>
+                <h4 class="text-uppercase">Team Information</h4>
                 <div class="h-30"></div>
-                <p><strong>Site</strong> New York, US</p>
-                <p><strong>Climate Zone</strong> 40.7, -74.0 (Cfa)</p>
-                <p><strong>Client</strong> Civilian Climate Corps</p>
-                <!-- <p><strong>Ground Floor Area </strong> </p> -->
+                <p><strong>Team Members</strong> Solo</p>
+                <p><strong>Role</strong> Data Analyst</p>
+                <p><strong>Location</strong> Gateshead, UK</p>
+                <p><strong>Year</strong> 2024</p>
             </div>
 
             <!-- <div class="project-description">
@@ -124,16 +124,27 @@
             <h3 class="text-uppercase">Context</h3>
             <div class="auto-text-columns">
                 <p>
-                    Climate change is affecting our life. The New York City is a place suffers from extreme climate vulnerability, such as Sea-Level Rise, Coastal Flooding, Heat Waves and Urban Heat Island Effect.
+                    This Sales Analysis project aimed to answer key questions by presenting findings in a dashboard: "Who are the customers?" and "How can the
+                    quantitative data of customers be related to their spending scores to better predict future customers' spending
+                    potential?"
                 </p>
 
                 <p>
-                    This site, which is a surface parking lot now and was a thermometer factory before and still have mercury under the property, is located at the edge of the South Street Seaport District at 250 Water Street, one of the most prosperous commercial districts in the New York City featured with high-rise buildings, and is in the hightest-risk flood zone in Manhattan,  facing the risk of sea level rise, of 40 centimeters by 2050 and 2-5 meters by 2010. The aim of this project is to design and build a new headquarters for the Civilian Climate Corps (CCC) to help Manhattan transition into a decarbonized world.
+                    Utilizing Age, Gender, and Annual Income as explanatory variables and Spending Score as the response variable, the
+                    project performed extensive data cleaning and data analysis. Data cleaning systematically reduced the initial 105 
+                    records to 88 by addressing duplicate rows, filling 29 missing values with the mean and the
+                    median based on context, identifying and handling 4 outliers in 'Annual Income', and correcting inconsistent data.
                 </p>
 
                 <p>
-                    CCC is a new public institution in US aims to engage young people and unemployed individuals in meaningful work related to climate resilience, renewable energy, conservation, and ecosystem restoration. This commercial zoning designation allows for a Floor Area Ratio of 6.5 for community facilities with a maximum height of 36.5m with applicable setbacks rules.
+                    A significant finding from a dual-axis plot was a positive correlation between annual income and spending score for
+                    customers aged below 45, which reverses to a negative correlation for those aged 45 and above.
                 </p>
+
+                <p>
+                    This project used Python packages including pandas, matplotlib, numpy, seaborn, math, statistics, and itertools.
+                </p>
+
             </div>
 
             <!-- <div class="h-30"></div> -->
@@ -146,51 +157,85 @@
 
                 <!-- Images -->
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Concept_Proposal.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_03.jpg?v=${VERSION}'
                     data-caption="
-                        <h4>Concept Proposal</h4>
+                        <h4>Sales Analysis Dashboard</h4>
                         <p>
-                            This site is located inside and directly on the northern edge of a historic zone. To honor the historical context and maintain the site's integrity, the building's design replicates the footprint of the northern edge while reducing its depth on the south side.
+                            Research Questions: 'Who are the customers?' and 'How can the
+                            quantitative data of customers be related to their spending scores to better predict future customers' spending
+                            potential?'
                         </p>
+
                         <p>
-                            Elevating the structure on three massive vertical columns, we aim to enhance natural ventilation and provide better daylight to the ground-level landscape. This area will connect with the green space on Peck Slip Street, forming an inviting green corridor for pedestrians.
+                            Key Finding: A dual-axis plot clearly visualized a positive correlation between annual income and spending score for
+                            customers aged below 45, which reverses to a negative correlation for those aged 45 and above.
                         </p>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Program.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_02.jpg?v=${VERSION}'
                     data-caption="
                         <h4>Daylight Analysis and Program Diagram</h4>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Net_Zero_Strategy.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_04.jpg?v=${VERSION}'
                     data-caption="
-                        <h4>Net Zero Strategy</h4>
-                        <p>
-                            The proposed massing design optimizes daylight and natural ventilation by strategically shaping and positioning the building form.
-                        </p>
-                        <p>
-                            The initial site footprint is refined by reducing its depth facing south, allowing for better daylight penetration into the building. The elevated massing concept further enhances natural light access to the ground floor while minimizing shading from surrounding buildings. Additionally, supporting cores are integrated to facilitate stack ventilation, improving passive cooling and indoor air quality.
-                        </p>
+                        <h4>Data Cleaning</h4>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Detail.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_05.jpg?v=${VERSION}'
                     data-caption="
-                        <h4>Details</h4>
+                        <h4>Data Cleaning</h4>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Rendering.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_06.jpg?v=${VERSION}'
                     data-caption="
-                        <h4>Workshop Interior Rendering</h4>
+                        <h4>Data Cleaning</h4>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->
-                <a data-image="MArch/on_a_new_datum/Model.jpg"
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_07.jpg?v=${VERSION}'
                     data-caption="
-                        <h4>Physical Models</h4>
+                        <h4>Data Cleaning</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_08.jpg?v=${VERSION}' 
+                    data-caption="
+                        <h4>Data Cleaning</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_09.jpg?v=${VERSION}' 
+                    data-caption="
+                        <h4>Data Cleaning</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_10.jpg?v=${VERSION}' 
+                    data-caption="
+                        <h4>Data Analysis</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_11.jpg?v=${VERSION}' 
+                    data-caption="
+                        <h4>Data Analysis</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_12.jpg?v=${VERSION}' 
+                data-caption="
+                        <h4>Data Analysis</h4>
+                    ">
+                </a>
+                <!-- ----------------------------------------------------------- -->
+                <a data-image='../img/DA/college_demo/JinLiu - Initial Assessment - Technical Task_Page_13.jpg?v=${VERSION}' 
+                    data-caption="
+                        <h4>References</h4>
                     ">
                 </a>
                 <!-- ----------------------------------------------------------- -->

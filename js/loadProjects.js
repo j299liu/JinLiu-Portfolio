@@ -1,5 +1,6 @@
 const projects = [
-    "projects/MARCH_on_a_new_datum.html",
+  "projects/MARCH_on_a_new_datum.html?v=${VERSION}",
+  "projects/data_analysis_college_demo.html?v=${VERSION}",
     // Add more project filenames here...
   ];
   
