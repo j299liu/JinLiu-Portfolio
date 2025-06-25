@@ -8,6 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jin Liu :: Portfolio</title>
 
+    <!-- Load global version -->
+    <script src="config.js"></script>
+
     <!-- GitHub Pages base path -->
     <base href="https://j299liu.github.io/JinLiu-Portfolio/">
     
@@ -50,7 +53,7 @@
         <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+                <a href="index.html?v=${VERSION}"><img src="img/logo.png" width="80" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger">
@@ -69,7 +72,7 @@
     <!-- top bar -->
     <div class="top-bar">
         <h1>contact Me</h1>
-        <p><a href="index.html">Home</a> / Contact Me</p>
+        <p><a href="index.html?v=${VERSION}">Home</a> / Contact Me</p>
     </div>
     <!-- end top bar -->
 
@@ -78,7 +81,7 @@
         <div class="col-md-6">
             <form action="https://formsubmit.co/434d9791b5fb7a54581db76a07fc435a" method="POST">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="thankyou.html">
+                <input type="hidden" name="_next" value="thankyou.html?v=${VERSION}">
 
                 <div class="row">
                     <div class="col-md-6">
@@ -152,14 +155,14 @@
     <script src="js/custom.js"></script>
 
     <script>
-        fetch("m_navigator.html")
+        fetch("m_navigator.html?v=${VERSION}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("navigator-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading navigation:", error));
 
-        fetch("m_footer.html")
+        fetch("m_footer.html?v=${VERSION}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer-container").innerHTML = data;

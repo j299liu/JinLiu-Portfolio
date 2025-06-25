@@ -9,6 +9,9 @@
     <title>Jin Liu :: Portfolio</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 
+    <!-- Load global version -->
+    <script src="config.js"></script>
+
     <!-- GitHub Pages base path -->
     <base href="https://j299liu.github.io/JinLiu-Portfolio/">
 
@@ -50,7 +53,7 @@
         <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+                <a href="index.html?v=${VERSION}"><img src="img/logo.png" width="80" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger">
@@ -67,7 +70,7 @@
     <!-- Top bar -->
     <div class="top-bar">
         <h1>About Me</h1>
-        <p><a href="index.html">Home</a> / About me</p>
+        <p><a href="index.html?v=${VERSION}">Home</a> / About me</p>
     </div>
     <!-- end Top bar -->
     
@@ -123,14 +126,14 @@
     <script src="js/custom.js"></script>
 
     <script>
-        fetch("m_navigator.html")
+        fetch("m_navigator.html?v=${VERSION}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("navigator-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading navigation:", error));
 
-        fetch("m_footer.html")
+        fetch("m_footer.html?v=${VERSION}")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer-container").innerHTML = data;
